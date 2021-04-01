@@ -3,7 +3,7 @@ require_once "./ComidaFactory.php";
 require_once "./Pizza.php";
 
 class PizzaFactory implements ComidaFactory{
-    public function criarComida($id)
+    public function criarComida($id) : Comida
     {
         if($id == 0){
             $p = new Pizza();
